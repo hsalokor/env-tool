@@ -1,7 +1,7 @@
 [project]
 name = "env-tool"
-version = "0.1.0"
-description = "Merge a local .env file into an example .env file"
+version = "0.2.0"
+description = "Cluster-aware env file management for DGX Spark model recipes"
 requires-python = ">=3.9"
 
 [project.scripts]
