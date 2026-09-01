@@ -1,5 +1,12 @@
 # env-tool
 
+> **TL;DR** — For a pair of DGX Sparks running LLM serving recipes: it probes
+> and verifies the (typically fiddly) RoCE interconnect between the two
+> nodes, then takes the pain out of third-party setup recipes' `.env` files —
+> your node-specific values (IPs, interfaces, HCAs, GID indices) are deduced
+> from the cluster itself, so after a `git pull` a single `env-tool apply`
+> regenerates a correct local env and shows exactly what upstream changed.
+
 Cluster-aware env file management for a 2-node DGX Spark (GB10) cluster.
 
 Upstream model recipes (`.env.example` / `.env.sample` / `.env.dspark.example`)
